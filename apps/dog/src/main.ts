@@ -1,11 +1,11 @@
 import { NestFactory } from '@nestjs/core';
-import { CatsModule } from './cats.module';
+import { DogModule } from './dog.module';
 
 declare const module: any;
 
 async function bootstrap() {
-  const app = await NestFactory.create(CatsModule);
-  await app.listen(3000);
+  const app = await NestFactory.create(DogModule);
+  await app.listen(4000);
 
   if (module.hot) {
     module.hot.accept();

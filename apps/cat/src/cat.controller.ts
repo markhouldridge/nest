@@ -1,17 +1,17 @@
 import { Controller, Get } from '@nestjs/common';
 import { FoodService } from 'apps/food/src/food.service';
-import { CatsService } from './cats.service';
+import { CatService } from './cat.service';
 
-@Controller('cats')
-export class CatsController {
+@Controller('cat')
+export class CatController {
   constructor(
-    private readonly catsService: CatsService,
+    private readonly catService: CatService,
     private readonly foodService: FoodService,
   ) {}
 
   @Get()
   getHello(): string {
-    return this.catsService.getHello();
+    return this.catService.getHello();
   }
 
   @Get('food')

@@ -7,7 +7,7 @@ import { MikroOrmModule } from '@mikro-orm/nestjs';
   imports: [
     MikroOrmModule.forRootAsync({
       useFactory: () => ({
-        dbName: 'mydb',
+        dbName: 'postgres',
         user: 'postgres',
         password: 'postgres',
         host: 'localhost',

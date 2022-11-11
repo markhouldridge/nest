@@ -4,11 +4,11 @@ import {
   Property,
   PrimaryKey,
 } from '@mikro-orm/core';
-import { DogsRepository } from './dogs.repository';
+import { DogRepository } from './dog.repository';
 
-@Entity({ customRepository: () => DogsRepository })
+@Entity({ tableName: 'main.dog', customRepository: () => DogRepository })
 export class Dog {
-  [EntityRepositoryType]?: DogsRepository;
+  [EntityRepositoryType]?: DogRepository;
 
   @PrimaryKey()
   name: string;

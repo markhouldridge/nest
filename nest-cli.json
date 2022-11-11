@@ -18,22 +18,22 @@
         "tsConfigPath": "apps/nest/tsconfig.app.json"
       }
     },
-    "cats": {
+    "cat": {
       "type": "application",
-      "root": "apps/cats",
+      "root": "apps/cat",
       "entryFile": "main",
-      "sourceRoot": "apps/cats/src",
+      "sourceRoot": "apps/cat/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/cats/tsconfig.app.json"
+        "tsConfigPath": "apps/cat/tsconfig.app.json"
       }
     },
-    "dogs": {
+    "dog": {
       "type": "application",
-      "root": "apps/dogs",
+      "root": "apps/dog",
       "entryFile": "main",
-      "sourceRoot": "apps/dogs/src",
+      "sourceRoot": "apps/dog/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/dogs/tsconfig.app.json"
+        "tsConfigPath": "apps/dog/tsconfig.app.json"
       }
     },
     "food": {
